@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(224, 214, 214);
+}
+
+.App {
+  padding-left: 2%;
+  padding-right: 2%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background: url("./components/images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.snapper {
+  position: relative;
+}
+.snapper .snapper-logo {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  cursor: pointer;
+}
+
+.Image-snapper {
+  padding: 0px;
+  border-radius: 10%;
+}
+
+.snapper .cancel_photo_icon {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  cursor: pointer;
+  z-index: 1000000;
+}
+
+/* 
+image preview style */
+
+.img-boxes {
+  position: relative;
+  border-radius: 10px;
+}
+
+.img-boxes .delete-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: red;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: crosshair;
+  transition: 0.5s;
+}
+.img-boxes .delete-icon:hover {
+  color: rgb(27, 4, 4);
+}
+.img-boxes .preview_tools {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-boxes .preview_tools > .MuiSvgIcon-root {
+  font-size: 20px !important;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.preview_send {
+  color: red;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-style: 40px;
+  cursor: pointer;
+  background: white;
+  border-radius: 10%;
+  padding: 2px;
+}
+
+/* image uploading styling */
+.loading {
+  opacity: 0.7;
+  cursor: progress;
+  filter: grayscale(100%);
+}

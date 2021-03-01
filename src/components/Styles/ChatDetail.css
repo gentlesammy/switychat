@@ -1,0 +1,38 @@
+.chat_detail_container {
+  width: 250px;
+  height: 480px;
+}
+
+.chat_detail_container .img_container {
+  position: relative;
+  height: 100%;
+}
+
+.chat_detail_container .img_container .close_icon {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  color: rgb(214, 213, 216);
+  width: 30px;
+  height: 30px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.chat_detail_container .img_container .close_icon:hover {
+  color: white;
+}
+
+/* chat detail timer */
+.chat_detail_timer {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: rgb(9, 2, 34);
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.5s;
+}
